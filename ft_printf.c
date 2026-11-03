@@ -6,7 +6,7 @@
 /*   By: tnahid <tnahid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:59:33 by tnahid            #+#    #+#             */
-/*   Updated: 2026/11/03 10:01:19 by tnahid           ###   ########.fr       */
+/*   Updated: 2026/11/03 12:06:35 by tnahid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	ft_printf(const char *format, ...)
 	va_list	ap;
 
 	if (!format)
-		return (0);
+		return (-1);
 	va_start(ap, format);
 	count = 0;
 	i = 0;

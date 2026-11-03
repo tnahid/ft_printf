@@ -6,7 +6,7 @@
 /*   By: tnahid <tnahid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:03:43 by tnahid            #+#    #+#             */
-/*   Updated: 2026/11/03 09:51:18 by tnahid           ###   ########.fr       */
+/*   Updated: 2026/11/03 12:37:21 by tnahid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 
 # define FT_PRINTF_H
 
-# include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
 # include <string.h>
-# include <stdio.h>
-# include <stdint.h>
-# include <limits.h>
 
 void	ft_putchar(char c, int *count);
 void	ft_putnbr(long n, int *count);
