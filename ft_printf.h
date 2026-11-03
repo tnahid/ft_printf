@@ -17,6 +17,8 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <string.h>
+# include <stdio.h>
+# include <fcntl.h>
 
 void	ft_putchar(char c, int *count);
 void	ft_putnbr(long n, int *count);

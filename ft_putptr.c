@@ -23,7 +23,7 @@ void	ft_putptr(void *str, int *count, char *base)
 	}
 	ptr = (unsigned long)str;
 	if (ptr >= 16)
-		ft_putptr((void *)ptr, count, base);
+		ft_putptr((void *)(ptr / 16), count, base);
 	if (ptr < 16)
 		ft_putstr("0x", count);
 	ft_putchar(base[ptr % 16], count);
