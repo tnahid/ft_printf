@@ -1,2 +1,2 @@
-# ft_printf
-my ft_printf project for 1337 cc.
+*This project has been created as part of the 42 curriculum by tnahid.*
+
