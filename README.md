@@ -15,7 +15,7 @@ identifies conversion specifiers, retrieves the corresponding arguments,
 converts them into printable representations when necessary, and writes
 the result to standard output.
 
-# Instructions
+## Instructions
 
 Compile the project:
 
@@ -36,6 +36,22 @@ Run the program:
 ```bash
 ./program
 ```
+
+## Algorithm
+
+`ft_printf` walks through the format string once, with an index `i`.
+
+- If the current character is `%` **and** the next character is one of
+  the supported specifiers (`cspdiuxX%`, checked by `check_format`), the
+  specifier is consumed and `what_format` handles it.
+- Otherwise the character is printed as it is.
+
+### Data structures
+
+There are none beyond a few local variables: the format string index, the
+character counter, and the `va_list`. No arrays, lists or heap memory are
+needed, which keeps the code small and free of memory management.
+
 # Supported Conversions
 
 - `%c` — character
@@ -46,10 +62,10 @@ Run the program:
 - `%x` and `%X` — hexadecimal
 - `%%` — percent sign
 
-# Ressources
+## Resources
 
-- prinf manual page.
-- stdarg manula page.
+- printf manual page.
+- stdarg manual page.
 - youtube videos about variadic functions.
 
 # AI Usage

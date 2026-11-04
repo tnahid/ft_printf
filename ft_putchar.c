@@ -6,7 +6,7 @@
 /*   By: tnahid <tnahid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:59:24 by tnahid            #+#    #+#             */
-/*   Updated: 2026/11/02 15:59:25 by tnahid           ###   ########.fr       */
+/*   Updated: 2026/11/04 10:46:40 by tnahid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	ft_putchar(char c, int *count)
 {
 	if (*count == -1)
 		return ;
-	if (write(1, &c, 1) != -1)
-		(*count)++;
-	else
+	if (write(1, &c, 1) != 1)
 		*count = -1;
+	else
+		(*count)++;
 }
